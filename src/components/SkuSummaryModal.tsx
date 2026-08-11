@@ -44,7 +44,7 @@ export const SkuSummaryModal: React.FC<SkuSummaryModalProps> = ({
 
   const handleExport = () => {
     // Generate simple CSV download for pending outbound items
-    const headers = ['品项名称', '分类', '规格', '待出库(瓶)'];
+    const headers = ['epu/纯净sku名称', '品项', '规格', '待出库（瓶）'];
     const rows = filteredList.map((item) => [
       `"${item.name}"`,
       `"${item.category}"`,
@@ -184,7 +184,7 @@ export const SkuSummaryModal: React.FC<SkuSummaryModalProps> = ({
               onClick={onClose}
               className="flex-1 sm:flex-none px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors shadow-2xs cursor-pointer"
             >
-              完成
+              确认
             </button>
           </div>
         </div>

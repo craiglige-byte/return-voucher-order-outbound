@@ -86,7 +86,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
               <div className="relative flex items-center group/tooltip">
                 <Info className="w-3.5 h-3.5 text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" />
                 <div className="absolute bottom-full right-0 mb-2 hidden group-hover/tooltip:block z-50 w-60 p-2.5 bg-slate-900/95 text-white text-[11px] rounded-lg shadow-xl leading-relaxed backdrop-blur-xs font-normal pointer-events-none">
-                  确认出库后将自动发放乐享券。
+                  确认出库后已自动发乐享券。
                   <div className="absolute top-full right-1 -mt-1 border-4 border-transparent border-t-slate-900/95"></div>
                 </div>
               </div>
@@ -117,9 +117,9 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
 
                 <div className="relative flex items-center group/tooltip" onClick={(e) => e.stopPropagation()}>
                   <Info className="w-3.5 h-3.5 text-blue-500 hover:text-blue-700 transition-colors cursor-pointer" />
-                  <div className="absolute bottom-full right-0 mb-2 hidden group-hover/tooltip:block z-50 w-64 p-2.5 bg-slate-900/95 text-white text-[11px] rounded-lg shadow-xl leading-relaxed backdrop-blur-xs font-normal pointer-events-none">
-                    经销商已核销下游，但尚未确认出库发放成乐享券的返货券总数。
-                    <div className="absolute top-full right-1 -mt-1 border-4 border-transparent border-t-slate-900/95"></div>
+                  <div className="absolute top-full right-0 mt-2 hidden group-hover/tooltip:block z-50 w-64 p-2.5 bg-slate-900/95 text-white text-[11px] rounded-lg shadow-xl leading-relaxed backdrop-blur-xs font-normal pointer-events-none">
+                    经销商已核销下游，但尚未确认出库发放成乐享券的返货券总数。确认出库后将自动发放乐享券。
+                    <div className="absolute bottom-full right-1 -mb-1 border-4 border-transparent border-b-slate-900/95"></div>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
 
               <div className="mt-1 text-[11px] font-medium text-blue-600 hover:text-blue-700 flex items-center justify-between pt-1 border-t border-blue-100/80">
                 <span className="flex items-center gap-1">
-                  按品项汇总明细
+                  按品项汇总待出库数量
                 </span>
                 <ChevronRight className="w-3.5 h-3.5 text-blue-500" />
               </div>
