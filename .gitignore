@@ -1,6 +1,6 @@
 node_modules/
 build/
-dist/
+# dist/  -- 提交以支持静态 HTML 分享
 coverage/
 .DS_Store
 *.log
