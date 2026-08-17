@@ -1,6 +1,6 @@
 {
-  "name": "返货券商品出库管理系统",
-  "description": "进销存-返货券商品出库原型，包含已核销、已发放（已出库）、待发放（待出库）指标卡及按品项待出库汇总视图",
+  "name": "下游返货券订单出库管理系统",
+  "description": "进销存-下游返货券订单出库原型：未生成返货订单（经销商待从下游返货）与返货券订单（待出库/已出库）两段分栏，含待出库商品统计弹窗",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

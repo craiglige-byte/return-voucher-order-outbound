@@ -40,7 +40,7 @@ export const OrderDetailModal: React.FC<OrderDetailModalProps> = ({
                   {order.status}
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-0.5">返货券商品出库核心流程明细数据</p>
+              <p className="text-xs text-slate-500 mt-0.5">下游返货券订单出库核心流程明细数据</p>
             </div>
           </div>
 

@@ -85,7 +85,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
               >
                 <div className="flex items-center justify-between w-full">
                   <div className="text-[12px] text-blue-900 font-semibold">
-                    <span>待出库-未发放乐享券</span>
+                    <span>待出库（未发放乐享券）</span>
                   </div>
                   <div className="relative flex items-center group/tooltip" onClick={(e) => e.stopPropagation()}>
                     <Info className="w-3.5 h-3.5 text-blue-500 hover:text-blue-700 transition-colors cursor-pointer" />
@@ -113,7 +113,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
             {/* 已出库 */}
             <div className="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200 flex-1 relative">
               <div className="text-[12px] text-slate-600 font-medium flex items-center justify-between">
-                <span>已出库-已发放乐享券</span>
+                <span>已出库（已发放乐享券）</span>
                 <div className="relative flex items-center group/tooltip">
                   <Info className="w-3.5 h-3.5 text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" />
                   <div className="absolute bottom-full right-0 mb-2 hidden group-hover/tooltip:block z-50 w-60 p-2.5 bg-slate-900/95 text-white text-[11px] rounded-lg shadow-xl leading-relaxed backdrop-blur-xs font-normal pointer-events-none">
