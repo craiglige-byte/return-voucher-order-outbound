@@ -38,7 +38,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
         <div className="lg:pr-6 flex flex-col">
           <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-400 uppercase tracking-wide mb-2">
             <ScanLine className="w-3.5 h-3.5" />
-            <span>未生成返货订单</span>
+            <span>待申请返货</span>
           </div>
 
           <div className="bg-slate-50/90 rounded-xl p-3.5 border border-dashed border-slate-300 flex-1 relative min-w-[200px]">
@@ -71,7 +71,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
         <div className="lg:pl-6 flex-1 flex flex-col">
           <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-400 uppercase tracking-wide mb-2">
             <Package className="w-3.5 h-3.5" />
-            <span>返货券订单</span>
+            <span>已申请返货</span>
             <span className="ml-1 px-1.5 py-0.5 rounded bg-slate-100 text-slate-600 font-semibold normal-case">{`${(totalPending + totalShipped).toLocaleString()} 瓶`}</span>
           </div>
 
@@ -85,7 +85,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
               >
                 <div className="flex items-center justify-between w-full">
                   <div className="text-[12px] text-blue-900 font-semibold">
-                    <span>待出库（未发放乐享券）</span>
+                    <span>已申请返货，待出库（未发放乐享券）</span>
                   </div>
                   <div className="relative flex items-center group/tooltip" onClick={(e) => e.stopPropagation()}>
                     <Info className="w-3.5 h-3.5 text-blue-500 hover:text-blue-700 transition-colors cursor-pointer" />
@@ -113,7 +113,7 @@ export const MetricCards: React.FC<MetricCardsProps> = ({ skuList, onOpenSkuSumm
             {/* 已出库 */}
             <div className="bg-slate-50/90 rounded-xl p-3.5 border border-slate-200 flex-1 relative">
               <div className="text-[12px] text-slate-600 font-medium flex items-center justify-between">
-                <span>已出库（已发放乐享券）</span>
+                <span>返货完成，已出库（已发放乐享券）</span>
                 <div className="relative flex items-center group/tooltip">
                   <Info className="w-3.5 h-3.5 text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" />
                   <div className="absolute bottom-full right-0 mb-2 hidden group-hover/tooltip:block z-50 w-60 p-2.5 bg-slate-900/95 text-white text-[11px] rounded-lg shadow-xl leading-relaxed backdrop-blur-xs font-normal pointer-events-none">
