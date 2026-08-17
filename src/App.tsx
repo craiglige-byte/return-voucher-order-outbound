@@ -10,7 +10,7 @@ import { CouponOutboundOrder, OrderStatus, SkuSummaryItem } from './types';
 import { CheckCircle, Info } from 'lucide-react';
 
 export default function App() {
-  const [currentMenu, setCurrentMenu] = useState('返货券商品出库');
+  const [currentMenu, setCurrentMenu] = useState('下游返货券订单出库');
   const [activeStatus, setActiveStatus] = useState<OrderStatus>('已出库');
   const [skuList, setSkuList] = useState<SkuSummaryItem[]>(INITIAL_SKU_SUMMARY);
   const [orders, setOrders] = useState<CouponOutboundOrder[]>(MOCK_ORDERS);
@@ -79,7 +79,7 @@ export default function App() {
 
         {/* Scrollable Main Body */}
         <main className="flex-1 overflow-y-auto p-5 custom-scrollbar">
-          {currentMenu === '返货券商品出库' ? (
+          {currentMenu === '下游返货券订单出库' ? (
             <div className="max-w-7xl mx-auto space-y-4">
               {/* Metric Cards (Top right modified metric cards per user request) */}
               <MetricCards
@@ -103,8 +103,8 @@ export default function App() {
               <h2 className="text-lg font-bold text-slate-800">{currentMenu} 模块</h2>
               <p className="text-xs text-slate-500 mt-2 max-w-md mx-auto">
                 当前页面为原型示例，点击左侧菜单栏中的
-                <strong className="text-blue-600 font-semibold cursor-pointer underline ml-1" onClick={() => setCurrentMenu('返货券商品出库')}>
-                  返货券商品出库
+                <strong className="text-blue-600 font-semibold cursor-pointer underline ml-1" onClick={() => setCurrentMenu('下游返货券订单出库')}>
+                  下游返货券订单出库
                 </strong>
                 可体验修改后的【已核销 | 已发放（已出库） | 待发放（待出库）及按品项待出库汇总】功能原型。
               </p>

@@ -37,7 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentMenu, onSelectMenu }) =
     { id: '其他出库', label: '其他出库', icon: PackageCheck },
     { id: '库存报表', label: '库存报表', icon: BarChart2 },
     { id: '库存盘点', label: '库存盘点', icon: CheckSquare },
-    { id: '返货券商品出库', label: '返货券商品出库', icon: Ticket, active: true },
+    { id: '下游返货券订单出库', label: '下游返货券订单出库', icon: Ticket, active: true },
   ];
 
   return (

@@ -76,14 +76,11 @@ export const SkuSummaryModal: React.FC<SkuSummaryModalProps> = ({
               <FileText className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-lg font-bold text-slate-800 tracking-tight">按品项汇总</h2>
+              <h2 className="text-lg font-bold text-slate-800 tracking-tight">待出库商品统计</h2>
             </div>
           </div>
 
           <div className="flex items-center space-x-3">
-            <span className="text-xs font-normal text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60">
-              核销口径
-            </span>
             <button
               onClick={onClose}
               className="text-slate-400 hover:text-slate-600 hover:bg-slate-100 p-1.5 rounded-full transition-colors cursor-pointer"

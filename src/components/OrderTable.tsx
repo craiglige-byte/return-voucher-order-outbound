@@ -121,13 +121,6 @@ export const OrderTable: React.FC<OrderTableProps> = ({
             }`}
           >
             <span>待出库</span>
-            <span
-              className={`text-xs px-2 py-0.5 rounded-full ${
-                activeStatus === '待出库' ? 'bg-blue-100 text-blue-700' : 'bg-slate-100 text-slate-600'
-              }`}
-            >
-              {orders.filter((o) => o.status === '待出库').length}
-            </span>
           </button>
 
           <button
@@ -142,13 +135,6 @@ export const OrderTable: React.FC<OrderTableProps> = ({
             }`}
           >
             <span>已出库</span>
-            <span
-              className={`text-xs px-2 py-0.5 rounded-full ${
-                activeStatus === '已出库' ? 'bg-blue-100 text-blue-700' : 'bg-slate-100 text-slate-600'
-              }`}
-            >
-              {orders.filter((o) => o.status === '已出库').length}
-            </span>
           </button>
         </div>
 
